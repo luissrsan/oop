@@ -47,8 +47,8 @@ def withdraw(amountToWithdraw,password):
     accountBalance = accountBalance - amountToWithdraw
     return accountBalance
 
-    newAccount('Joe',100,'soup')
-    while True:
+newAccount('Joe',100,'soup')
+while True:
         print()
         print("press b to get the balance")
         print('press d to make a deposit')
@@ -62,12 +62,12 @@ def withdraw(amountToWithdraw,password):
         action = action[0]
         print()
 
-        if action =='b'
+        if action =='b':
          print('Get balance')
          userPassword = input("Please enter password")
          theBalance = getBalance(userPassword)
          if theBalance is not None:
-            print("Your balance is ," theBalance)
+            print("Your balance is " ,theBalance)
 
         elif action =='d':
             print('Deposit')
@@ -76,6 +76,6 @@ def withdraw(amountToWithdraw,password):
             userPassword = input("Please enter the password")
             newBalance = deposit(userDepositAmount,userPassword)
             if newBalance is not None:
-                print('Your new balance is :'newBalance)
+                print('Your new balance is :',newBalance)
 
 print('Done')
