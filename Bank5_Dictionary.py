@@ -3,7 +3,7 @@ accountsList=[]
 def newAccount(aName,aBalance,aPassword):
     global accountsList
     newAccountsDict = {'name':aName,'balance':aBalance,'password':aPassword}
-    accountsList.append(newAccountDict)
+    accountsList.append(newAccountsDict)
 
 def show(accountNumber):
     global accountsList
@@ -46,7 +46,7 @@ while True:
     if action == 'b':
         print('Get balance')
         userAccountNumber = input ('Please enter your account number')
-        userAccountNumber = int(userAcccountNumber)
+        userAccountNumber = int(userAccountNumber)
         userPassword = input('Please enter your password')
         theBalance =getBalance(userAccountNumber,userPassword)
         if theBalance is not None:
@@ -55,8 +55,8 @@ while True:
         print('Deposit')
         userAccountNumber = input ('Please enter your account number')
         userAccountNumber = int(userAccountNumber)
-        userDepositAccount = input('Please enter the amount to deposit')
-        userDepositAccount = int(userDepositAmount)
+        userDepositAmount = input('Please enter the amount to deposit')
+        userDepositAmount = int(userDepositAmount)
         userPassword = input('Please enter your password')
 
         newBalance = deposit(userAccountNumber,userDepositAmount,userPassword)
