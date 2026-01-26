@@ -28,6 +28,7 @@ newAccount('Joe',100,'soup')
 print('Marys Account is account number:', len(accountNamesList))
 newAccount('Mary',12345,'nuts')
 
+
 while True:
     print()
     print('press b to get the balance')
@@ -42,7 +43,7 @@ while True:
     action = action.lower()
     action = action[0]
     print()
-    if action == 'b'
+    if action == 'b':
         print('Get Balance')
         userAccountNumber = input ('Please enter your account number:')
         userAccountNumber = int(userAccountNumber)
